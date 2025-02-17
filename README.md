@@ -17,8 +17,8 @@ This web application allows you to check the weather forecast for your current l
 
 ### Preview
 * Hosted to github pages, you can use it from [here](https://nadia-yasser-fouad.github.io/Weather-App/)
-* Demo
-  https://github.com/user-attachments/assets/9d65950a-1606-49ac-9080-ffe84d31fe7a
+* Demo [here](https://github.com/user-attachments/assets/9d65950a-1606-49ac-9080-ffe84d31fe7a)
+  
 
   
 
