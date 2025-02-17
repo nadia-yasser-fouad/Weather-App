@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="weather app to show weather forecasts for three days">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Weather App</title>
+    <link
+      rel="shortcut icon"
+      href="./images/fav-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="min-vh-100">
+      <div class="container">
+        <!-- Nav Bar Section -->
+        <nav class="navbar navbar-expand-lg m-auto">
+          <a href="#" class="navbar-brand"
+            ><img
+              src="./images/weather-app.png"
+              alt="weather app"
+              width="60"
+              height="60"
+          /></a>
+          <button
+            class="navbar-toggler border border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered text-white-50 fs-3"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto py-4 mb-lg-0 gap-3 px-4">
+              <li class="nav-item text-center">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search City..."
+                  aria-label="Search"
+                />
+              </li>
+              <li class="nav-item">
+                <button
+                  id="currLocarion"
+                  class="btn btn-warning text-white w-100"
+                  type="button"
+                >
+                  <i class="fa-solid fa-location-crosshairs"></i> Current
+                  Location
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Main Display Section -->
+        <div class="row main-section text-white py-4 justify-content-between">
+          <!-- Display By JS **display function** -->
+          <div class="col-lg-4 current">
+          </div>
+          <div class="col-lg-7 p-3">
+            <div class="row highlights d-flex justify-content-between"></div>
+            <div
+              class="row other-days pt-5 d-flex justify-content-between align-items-center row-gap-3"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- Loader -->
+      <div
+        class="loading vh-100 w-100 position-fixed top-0 start-0 bg-info bg-opacity-25 d-flex justify-content-center align-items-center d-none"
+      >
+        <span class="loader"></span>
+      </div>
+    </main>
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
